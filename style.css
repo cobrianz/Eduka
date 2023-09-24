@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    appearance: unset;
+    outline: none;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    width: 96vw;
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar h1{
+    color: #6a5acd;
+    font-size: 3rem;
+    cursor: pointer;
+
+}
+
+.navbar h1 span{
+    color: #5e5b5b;
+    font-size: 2rem;
+}
+
+.navbar img{
+    width: 1.5rem;
+}
+
+.navbar>a span{
+    padding: .3rem;
+    color: #ffa500;
+    background: #6a5acd;
+    position: relative;
+    border-radius: 50%;
+    right: .5rem;
+    bottom: 1rem;
+}
+
+.hero{
+    background: #e2dfdf;
+    height: 80vh;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    flex: 2;
+}
+
+.hero__left small{
+    font-size: 2rem;
+    color: #5e5b5b;
+}
+
+.hero__left h2{
+    font-size: 4rem;
+}
+
+.hero__left h1{
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    color: #fff;
+}
+
+a .btn{
+    background: red;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: transform 400ms ease;
+}
+
+a .btn:hover{
+    transform: scale(1.1);
+}
+
+.hero img{
+    width: 700px;
+    position: absolute;
+    left: 45%;
+}
+
+.hero__right{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    right: 6vw;
+    bottom: 10vw;
+}
+
+.hero__right p{
+    font-size: 1.2rem;
+    color: #5e5b5b;
+}
+
+.cart{
+    width: 20rem;
+    height: 80%;
+    background: #fff;
+    position: absolute;
+    right: 4rem;
+    top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+.item__left img{
+    width: 80px;
+}
+/* best seller section styling */
+
+.title{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.title h1{
+    font-size:3rem;
+    color: #2d2752;
+}
+
+
+.title small{
+    font-size: 1.5rem;
+    color: #5e5b5b;
+}
+
+.main{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.product img{
+    width: 300px;
+    background: #e2dfdf;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    transition: transform 400ms ease;
+    opacity: 0.9;
+}
+
+.product img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.product p{
+    padding: .5rem;
+    color: #5e5b5b;
+}
+
+.product small{
+    display: flex;
+    gap: 1rem;
+}
+
+.product small span{
+    text-decoration: line-through;
+    color: #5e5b5b;
+}
+
+/* featured section styling */
+
+.featured{
+    margin-top: 7rem;
+    background: #9e3a3a;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    color: #fff;
+}
+
+.featured__left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.featured__left small{
+    font-size: 1.5rem;
+    
+}
+
+.featured__left h2{
+    font-size: 5rem;
+}
+
+.featured__center img{
+    width: 700px;
+    margin-top: -8rem;
+}
+
+.featured__right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.featured__right h3{
+    font-size: 4rem;
+}
+
+.featured__right small{
+    font-size: 1.2rem;
+}
+
+.featured__right p{
+    font-size: small;
+    color: #d4c1c1;
+}
+
+.featured__right a button{
+    background: #fff;
+    font-weight: bold;
+    color: #9e3a3a;
+}
+
+
+
+/* sales section styling */
+
+.categories{
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.categories>a{
+    color: #000;
+    padding: 8px 12px;
+    background: #e2dfdf;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: transform 400ms ease;
+}
+.categories .active{
+    color: #fff;
+    background: #2d2752;
+}
+
+.categories>a:hover{
+    transform: translateY(5%);
+}
+.categories>a:active{
+    color: #fff;
+    background: #2d2752;
+}
+.sales .sales-btn{
+    width: fit-content;
+    margin: 3rem auto;
+}
+
+.sales .sales-btn .btn{
+    padding: 8px 12px;
+    background: #2d2752;
+    font-size: 1rem;
+}
+
