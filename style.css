@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,9 @@
     outline: none;
     border: none;
 }
-
+body{
+    font-family: 'Poppins', sans-serif;
+}
 a{
     text-decoration: none;
 }
@@ -51,7 +55,7 @@ nav{
 
 .navbar>a span{
     padding: .3rem;
-    color: #ffa500;
+    color: #fff;
     background: #6a5acd;
     position: relative;
     border-radius: 50%;
@@ -103,7 +107,7 @@ a .btn{
 }
 
 a .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .hero img{
@@ -311,3 +315,150 @@ a .btn:hover{
     font-size: 1rem;
 }
 
+/* product details section styling */
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-bottom: 4rem;
+}
+
+.home .home__left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .home__left>figure{
+    margin: 2rem auto;
+    width: 70%;
+    aspect-ratio: 1/1;
+    
+}
+
+.home .home__left figure img{
+    width: 100%;
+    background: #e2dfdf;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    transition: transform 500ms ease;
+}
+
+.home .home__left figure:hover >img{
+    background: #f0eded;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.products__items{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products__items img{
+    width: 20%;
+    background: #e2dfdf;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+    transition: transform 300ms ease;
+    cursor: pointer;
+}
+
+.products__items img:hover{
+    transform: scale(1.08);
+}
+
+
+.home .home__right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.home .home__right h2{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    color: #5e5b5b;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.rating img{
+    fill: #9e3a3a;
+    width: 1rem;
+}
+
+.home .home__right h3{
+    font-size: 1.4rem;
+}
+
+.home .home__right p{
+    width: 80%;
+    color: #5e5b5b;
+}
+
+.home .home__right strong{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home .home__right strong>span{
+    display: flex;
+    gap: 2rem;
+    border: 2px solid #adabab;
+    padding: .2rem 1rem;
+}
+
+.home__right strong>span span{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.home__right strong>span span:nth-child(odd){
+    color: #918e8e;
+}
+
+.home__right strong>span span:nth-child(even){
+    cursor: default;
+}
+
+.home__right .buttons{
+    display: flex;
+    gap: 3rem;
+}
+
+.home__right .buttons a .btn-primary{
+    background: transparent;
+    color: #9e3a3a;
+    font-weight: bold;
+    border: 2px solid #9e3a3a;
+}
+
+
+/* you may also like section styling */
+
+.recc__products .title h1{
+    font-size: 2rem;
+}
+
+.recc__products .title small{
+    font-size: 15px;
+}
+
+.recc__products .main{
+    display: flex;
+}
+
+marquee:hover{
+    transition: none;
+}
