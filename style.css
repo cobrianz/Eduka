@@ -462,8 +462,63 @@ marquee:hover{
     transition: none;
 }
 
-@media screen and (max-width: 1200px) {
-    .container{
-        width: 98%;
+@media screen and (max-width: 1670px) {
+    .hero img{
+        width: 600px;
+    }
+
+    .btn{
+        padding: .8rem 1rem;
+    }
+    .hero__right{
+       align-items: flex-end;
+    }
+    .hero__right h1{
+        font-size: 1.2rem;
+    }
+    .hero__right p{
+    font-size: 1rem;
+    width: 250px;
+    text-align: right;
+    }
+    .title h1{
+        font-size: 2.5rem;
+    }
+    .title small{
+        font-size: 1rem;
+    }
+    .product img{
+        width: 200px;
+    }
+    .product p{
+        font-size: 14px;
+    }
+    .product small{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .btn{
+        padding: .6rem .9rem;
+    }
+
+    .hero img{
+        width: 450px;
+    }
+    .featured__center img{
+        width: 400px;
+        margin-top: -5rem;
+    }
+    .featured__left h2{
+        font-size: 4rem;
+    }
+    .categories{
+        flex-wrap: wrap;
+       
+    }
+    .categories a{
+        font-size: 14px;
     }
 }
